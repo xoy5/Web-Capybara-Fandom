@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]>     <html lang="pl" class="lt-ie8"> <![endif]-->
+<!--[if IE 9]>         <html lang="pl" class="lt-ie8 lt-ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html data-pwa="1" lang="pl"> <!--<![endif]-->
+<head data-features="WyJ3ZWJkYXYiLCJzYWFzX2JpbGxpbmciLCJyZWRpcmVjdHNfY29uZmlnIiwicmVkaXJlY3RzX2RvbWFpbnMiLCJyZWRpcmVjdHNfb2JqZWN0cyIsInJlZGlyZWN0c19yb3V0ZXIiLCJyZWRpcmVjdHNfYXBpIiwiYWxsZWdyb19kb3dubG9hZF9vcmRlcnMiLCJhbGxlZ3JvX2ltcG9ydF9hdWN0aW9ucyIsImFsbGVncm9fdXBkYXRlX2F1Y3Rpb25zIiwic2VhcmNoX2luZGV4ZXIiLCJzZWFyY2hfYWRtaW4iLCJwd2EiLCJzZW9fZ2Z4IiwiYWxsZWdyb19zZW5kX3NoaXBwaW5nX251bWJlciIsInNob3dfcHJlbWl1bV9mZWF0dXJlcyIsInNlYXJjaF9jbGllbnQiLCJyZWNvbW1lbmRhdGlvbnNfdHJhY2tpbmciLCJiZWxsX21lc3NhZ2VzIiwicGF5bWVudF9ncGF5IiwibmJwX2N1cnJlbmNpZXMiLCJhbGxlZ3JvX2Rvd25sb2FkX29yZGVyc19zdXJjaGFyZ2VzIiwiYWxsZWdyb19hdXRvX2ltcG9ydF9hdWN0aW9ucyIsImFsbGVncm9fb3JkZXJfYW5kX3RyYW5zYWN0aW9uX3VpZF9maWx0ZXJzIiwiYWxsZWdyb19kb3dubG9hZF9vcmRlcnNfYWRkaXRpb25hbF9zZXJ2aWNlcyIsInR3b19mYWN0b3Jfc21zIiwiaW5wb3N0X21hcCIsInBhY3prb21hdHlfZGlzYWJsZSIsInByb2R1Y3RfZHVwbGljYXRlX25ld19vcHRpb25zIiwid2VicHVzaF9hZG1pbiIsIm5ld19wYW5lbF9tZXNzYWdlIiwiZGVmYXVsdF9maWx0ZXJfcHJvZmlsZXMiLCJpbnBvc3RfcHd3IiwiZmlsZV9tYW5hZ2VtZW50IiwibmV3X29yZGVyc192aWV3IiwicmVjYXB0Y2hhX2FkbWluIiwic2lkZWJhcl90b2dnbGUiLCJ0d29fZmFjdG9yIiwidHJhZmZpY19hbmFseXplciIsInRyYWZmaWNfbmV3X3JlcG9ydHMiLCJwZXJmb3JtYW5jZV9yZXBvcnRzIiwibmV3X3BhcmNlbF9jcmVhdGUiLCJhdXJvcmFfcmVmYWN0b3JpbmciLCJwYXltZW50X3BheXBvIiwibm9fbW9iaWxlX3NraW5fbG9naWMiLCJhbGxlZ3JvX3VwZGF0ZV9xdWFudGl0eV9tdWx0aWFjdGlvbiIsImFsbGVncm9fdXBkYXRlX3ByaWNlX211bHRpYWN0aW9uIiwiYWxsZWdyb19zdGF0dXNfbWFwIiwiZ3R1X2NvZGUiLCJ2YXRfZXUiLCJuZXdfYWxsZWdyb190ZW1wbGF0ZV9jcmVhdG9yIiwiYWxsZWdyb19hc3NpZ25fdGF4X3ZhbHVlX211bHRpYWN0aW9uIiwiYWxsZWdyb19hdWN0aW9uc190YXhfdmFsdWVfZmlsdGVycyIsImFsbGVncm9fY3JlYXRvcl90YXhfc2VsZWN0aW9uX2xpc3QiLCJhbGxlZ3JvX2RldGVjdF9hbGxlZ3JvX3Byb2R1Y3RfbXVsdGlhY3Rpb24iLCJhbGxlZ3JvX2Fzc2lnbl9hbGxlZ3JvX3Byb2R1Y3RfbXVsdGlhY3Rpb24iLCJhbGxlZ3JvX2F1Y3Rpb25zX2hhc19hbGxlZ3JvX3Byb2R1Y3RfZmlsdGVycyIsImFsbGVncm9fcHJvZHVjdHNfaGFzX2FsbGVncm9fcHJvZHVjdF9maWx0ZXJzIiwiY2xlYW5fdXBfbWFpbF9sb2dzIiwibmV3X29yZGVyX25vdGVzIiwibmV3X2dhbGxlcnkiLCJyZWNvbW1lbmRhdGlvbnNfc3RhdHNfYW5hbHl6ZXIiLCJvYmplY3RzX3N0YXRzX2FuYWx5emVyIiwicmVjb21tZW5kYXRpb25zX21vZGVsX2ZpdCIsInJlY29tbWVuZGF0aW9uc19hZG1pbiIsImN1c3RvbWVyX3ByaXZhY3kiLCJpbWdfc2l6ZV9lZGl0YWJsZSIsImRpZ2l0YWxfbGlua3MiLCJjb2xsZWN0aW9ucyIsImdmeF9tZXRhZGF0YSIsInByb2dyZXNzaXZlX2Rpc2NvdW50cyIsImdvb2dsZV9hbmFseXRpY3NfdjQiLCJmYWNlYm9va19idXNpbmVzc19leHRlbnNpb24iLCJmYWNlYm9va19jYXBpIiwicmVjb21tZW5kYXRpb25zX2NvbXB1dGVfc3Vtc19vcHRpbWl6YXRpb24iLCJyZWNvbW1lbmRhdGlvbnNfc3Vtc19vcHRpbWl6YXRpb24iLCJzdG9jazBfc3luYyIsInN0b2NrMCIsImRpc2FibGVfY2xpZW50X3Nlc3Npb25fdWFfcmV2YWxpZGF0ZSIsIndhcmVob3VzZXNfbG9ncyIsIndhcmVob3VzZXMiLCJwcm9kdWN0X2R1cGxpY2F0ZV9jb2xsZWN0aW9ucyIsInJlc3RhcGlfd2l0aG91dF9sb2NrcyIsImNvbmRpdGlvbl9vbl9wcm9tb2NvZGVzbGlzdCIsInBob25lX3ZhbGlkYXRpb24iLCJ1cmxfcmVwYWlyX3N0cmluZ19kaXNhYmxlIiwicHJvZHVjdHNfb3JkZXIiLCJhbGxlZ3JvX2VycGJveCIsInN0b2NrX29wdGltaXphdGlvbiIsInByb2R1Y3RfYnVuZGxlcyIsIm1haW5fcGFnZV9jb2xsZWN0aW9uIiwicmVicmFuZGluZ19hcGlsbyIsIm1vZGFsX2ltcHJvdmVtZW50Iiwic2hvcGVyX3NoaXBtZW50cyIsInByb21vdGlvbnNfcHJvZHVjdHNfbWFudWFsX29yZGVyIiwiY2FtcGFnaW5zX3Rpa3RvayIsIm5ld19wcm9kdWN0c19tYW51YWxfb3JkZXIiLCJmcm9udHNraW5fY29uZmlndXJhdG9yX25ld19jb250cm9scyIsImZyb250c2tpbl9jb25maWd1cmF0b3IiLCJwYXltZW50X2FwcGxlX3BheSIsImJ5X2RhdGVfYWRkX3NvcnRfdHlwZXMiLCJmZWF0dXJlX2ZsYWdzX2FjayJd" data-ajaxbasket-mode="1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>FLAGA Bydgoszcz EKON STUDIO Sklep z flagami</title>
+    <meta name="keywords" content="FLAGA Bydgoszcz,  FLAGI MIAST,  EKON STUDIO" />
+    <meta name="description" content="FLAGA Bydgoszcz w kategorii FLAGI MIAST" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <link rel="home" href="/" />
+    <link rel="shortcut icon" href="/skins/default/rwd_shoper/images/favicon.png">
+        
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preconnect" href="//fonts.gstatic.com">
+    <link rel="preload" as="font" type="font/woff" href="/skins/default/rwd_shoper/images/rwd-custom.woff?gptqpz" crossorigin>
+    <link rel="preload" as="font" type="font/woff" href="/skins/default/rwd_shoper/images/fontawesome-webfont.woff?v=4.0.3" crossorigin>
+
+        <meta name="google-site-verification" content="_1AaSXgMFZ1-FYH60hhHvpq9syrAI8tK7qUsiXZxVoM"/>    
+    
+    <link id="csslink" rel="stylesheet" type="text/css" href="/skins/default/rwd_shoper/cache/sfc/NzoyODI6NS4yMi4yMA.css" />
+
+    <script type="text/javascript" src="/assets/js/frontstore/main.f646e3e5138644e57fb5.min.js"></script>
+    <script type="text/javascript" src="/userdata/public/locales/pl_PL.js?sci=282"></script>
+    
+                        <link rel="canonical" href="https://sklep-flagi.pl/pl/p/FLAGA-Bydgoszcz/22977389" />
+            
+                                        <meta property="og:type" content="product" />
+                                                <meta property="og:url" content="https://sklep-flagi.pl/pl/p/FLAGA-Bydgoszcz/22977389" />
+                                                <meta property="og:site_name" content="EKON STUDIO Sklep z flagami" />
+                                                <meta property="og:title" content="FLAGA Bydgoszcz" />
+                                                <meta property="og:image" content="https://sklep-flagi.pl/environment/cache/images/500_500_productGfx_2895/POL_Bydgoszcz_flag.svg.jpg" />
+                                                <meta property="og:description" content=" 
+ " />
+                            
+    <script src="https://dcsaascdn.net/js/front-api-1.4.0.min.js" async></script>
+<!-- KOD NA POTRZEBY SHOPER KAMPANII. PROSZE NIE USUWAC BEZ KONSULTACJI - Google Ads: 802544262 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-802544262"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-802544262');
+</script>
+<!-- KOD NA POTRZEBY SHOPER KAMPANII. PROSZE NIE USUWAC BEZ KONSULTACJI - FB ADS 20210408 -->
+<meta name="facebook-domain-verification" content="7ubgytvico9r3hl42h156a3adptoqa" />
+    
+    
+</head>
+<body id="shop_product22977389" class="shop_product shop_product_from_cat_2177618"><script>window.customerPrivacy.onPlatformConsentGranted(() =>{window.Shop = window.Shop || {}; Shop.values = Shop.values || {}; Shop.values.partnerEE=true; Shop.values.partnerData=1658610458158423;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','shopLayer','GTM-T68LWS');});</script>
+    
+
+    
+<div class="wrap rwd">
+    <header class="row">
+                                    <div class="login-bar row container">
+                    <ul class="links inline">
+                                                                                    <li class="register">
+                                    <a href="/pl/reg" title="Zarejestruj się" class="register">
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1" >
+                                        <span>Zarejestruj się</span>
+                                    </a>
+                                </li>
+                                                        <li class="login">
+                                <a href="/pl/login" title="Zaloguj się" class="login">
+                                    <img src="/libraries/images/1px.gif" alt="" class="px1" >
+                                    <span>Zaloguj się</span>
+                                </a>
+                            </li>
+                                            </ul>
+                </div>
+                            
+        
+        <div class="logo-bar row container">
+            <a href="/" title="Strona główna" class="link-logo link-logo-text">
+                                    EKON STUDIO Sklep z flagami
+                            </a>
+
+                                                <div class="basket right empty-basket">
+                        <a href="/pl/basket" title="Koszyk" class="count">
+                            <img src="/libraries/images/1px.gif" alt="" class="px1">
+                            <span class="countlabel">
+                                <span>Koszyk:</span>
+                                <b>
+                                                                            (pusty)
+                                                                    </b>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="basket-contain">
+                        <div class="basket-products">
+                            <ul class="basket-product-list">
+                                                            </ul>
+                        </div>
+                        
+                        <div class="basket-summery">
+                            <a href="/pl/basket">do kasy</a>
+                            <span class="basket-price">
+                                <span class="price-total">
+                                    <span>suma:</span>
+                                    <strong class="price-products">0,00 zł</strong>
+                                </span>
+                                                            </span>
+                        </div>
+                    </div>
+                            
+                            <form class="search-form right " action="/pl/s" method="post">
+                    <fieldset>
+                        <input type="text" name="search" placeholder="szukaj w sklepie..." value="" class="search-input s-grid-3" />
+                        <button type="submit" class="search-btn btn btn-red">
+                            <img src="/libraries/images/1px.gif" alt="" class="px1">
+                            <span>Szukaj</span>
+                        </button>
+                            <a href="/pl/s" title="wyszukiwarka zaawansowana" class="none adv-search">wyszukiwarka zaawansowana</a>
+                    </fieldset>
+                </form>
+                    </div>
+    </header>
+
+     
+    <div class="menu row">
+        <nav class="innermenu row container relative">
+                            <ul class="menu-list large standard">
+                    <li class="home-link-menu-li">
+                        <h3>
+                            <a href="/" title="Strona główna">
+                                <img src="/libraries/images/1px.gif" alt="Strona główna" class="px1">
+                            </a>
+                        </h3>
+                    </li>
+
+                                                                        <li>
+                                <h3>
+                                    <a  href="/" title="Strona główna" id="headlink7" class="spanhover mainlevel">
+                                        <span>Strona główna</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                            </li>
+                                                                                                <li>
+                                <h3>
+                                    <a  href="/pl/static/o-firmie.html" title="O firmie" id="headlink4" class="spanhover mainlevel">
+                                        <span>O firmie</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                            </li>
+                                                                                                <li>
+                                <h3>
+                                    <a  href="/pl/i/Kontakt-z-nami/12" title="Kontakt z nami" id="headlink10" class="spanhover mainlevel">
+                                        <span>Kontakt z nami</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                            </li>
+                                                                                                <li>
+                                <h3>
+                                    <a  href="/pl/static/formy-platnosci.html" title="Formy płatności" id="headlink5" class="spanhover mainlevel">
+                                        <span>Formy płatności</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                            </li>
+                                                                                                <li>
+                                <h3>
+                                    <a  href="/pl/i/Zasady-uzytkowania-flag/13" title="Zasady użytkowania flag" id="headlink11" class="spanhover mainlevel">
+                                        <span>Zasady użytkowania flag</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                            </li>
+                                                                                                <li>
+                                <h3>
+                                    <a  href="/pl/static/czas-i-koszty-dostawy.html" title="Czas i koszty dostawy" id="headlink9" class="spanhover mainlevel">
+                                        <span>Czas i koszty dostawy</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                            </li>
+                                                                                                                                            <li>
+                                <h3>
+                                    <a  href="/pl/promotions" title="Promocje" id="headlink3" class="spanhover mainlevel">
+                                        <span>Promocje</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                            </li>
+                                                                                                <li>
+                                <h3>
+                                    <a  href="/pl/contact" title="Formularz kontaktowy" id="headlink6" class="spanhover mainlevel">
+                                        <span>Formularz kontaktowy</span>
+                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                    </a>
+                                </h3>
+                                                            </li>
+                                                            </ul>
+            
+                            <ul class="menu-mobile rwd-show-medium rwd-hide-full">
+                    <li class="menu-mobile-li small-menu flex flex-4">
+                        <a href="/" title="Menu" class="fa fa-align-justify">
+                            <img src="/libraries/images/1px.gif" alt="" class="px1">
+                        </a>
+                    </li>
+                    <li class="menu-mobile-li small-search flex flex-4" id="activ-search">
+                        <a title="Szukaj" class="fa fa-search">
+                            <img src="/libraries/images/1px.gif" alt="" class="px1">
+                        </a>
+                    </li>
+                    <li class="menu-mobile-li small-panel flex flex-4" id="activ-panel">
+                        <a href="/pl/panel" title="Moje konto" class="fa fa-user">
+                            <img src="/libraries/images/1px.gif" alt="" class="px1">
+                        </a>
+                    </li>
+                    <li class="menu-mobile-li small-cart flex flex-4">
+                        <a href="/pl/basket" title="Koszyk" class="icon icon-custom-cart" data-basket-count="0">
+                            <img src="/libraries/images/1px.gif" alt="" class="px1">
+                        </a>
+                    </li>
+                </ul>
+                    </nav>
+    </div>
+        
+            <div class="breadcrumbs large tablet row">
+            <div class="innerbreadcrumbs row container">
+                <a href="/" title="Strona główna" rel="nofollow" class="breadcrumb-home left">
+                    <img src="/libraries/images/1px.gif" alt="" class="px1">
+                    <span>Jesteś w:</span>
+                </a>
+
+                <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="path left inline">
+                    
+                                                                <li class="bred-1 " itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="/" itemprop="item">                                <span class="raq">&raquo;</span>   
+                                <span itemprop="name">Strona główna</span>
+                            </a>
+                                                            <meta itemprop="position" content="1" />
+                                                                                    </li>
+                                            <li class="bred-2 " itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="/pl/c/FLAGI-MIAST/2177618" itemprop="item">                                <span class="raq">&raquo;</span>   
+                                <span itemprop="name">FLAGI MIAST</span>
+                            </a>
+                                                            <meta itemprop="position" content="2" />
+                                                                                    </li>
+                                            <li class="bred-3 last" >
+                                                            <span class="raq">&raquo;</span>   
+                                <span>FLAGA Bydgoszcz</span>
+                            
+                                                    </li>
+                                    </ul>
+            </div>
+        </div>
+    
+                    
+                        
+            <div class="top row">
+            <div class="container">
+                                    <div class="box resetcss box_custom" id="box_custom59">
+                    
+                                            <p><span style="font-size: 18pt;">Zapraszamy do kontaktu:</span></p>
+<p><span style="font-size: 18pt;">nasz mail: <a href="mailto:ekonstudio@republika.pl">ekonstudio@republika.pl</a> </span></p>
+<p><span style="font-size: 18pt;">tel.: 22 3049782</span></p>
+                    
+                    
+                    
+                                        </div>
+            </div>
+        </div>
+        <div class="main row">
+        <div class="innermain container">
+            <div class="s-row">
+                                    <div class="leftcol large s-grid-3">
+                                            <div class="box" id="box_menu">
+                        <div class="large standard boxhead">
+                            <span><img src="/libraries/images/1px.gif" alt="" class="px1">Menu</span>
+                        </div>
+                        <div class="innerbox">
+                                                                                    <ul class="standard">
+                                                            <li id="category_2177587"><a href="/pl/c/FLAGI-SATYNOWE-ATLASOWE-PODWOJNE/2177587" title="FLAGI SATYNOWE-ATŁASOWE PODW&Oacute;JNE">FLAGI SATYNOWE-ATŁASOWE PODW&Oacute;JNE</a></li><li id="category_817723"><a href="/pl/flagi-polskie" title="FLAGI POLSKIE">FLAGI POLSKIE</a></li><li id="category_817724"><a href="/pl/flagi-narodowe" title="FLAGI NARODOWE">FLAGI NARODOWE</a></li><li id="category_2177615"><a href="/pl/c/FLAGI-PANSTW-UE/2177615" title="FLAGI PAŃSTW UE">FLAGI PAŃSTW UE</a></li><li id="category_817725"><a href="/pl/flagi-unii-europejskiej" title="FLAGI UNII EUROPEJSKIEJ">FLAGI UNII EUROPEJSKIEJ</a></li><li id="category_2177619"><a href="/pl/c/FLAGI-POWIATOWE/2177619" title="FLAGI POWIATOWE">FLAGI POWIATOWE</a></li><li id="category_2177618" class="current"><a href="/pl/c/FLAGI-MIAST/2177618" title="FLAGI MIAST">FLAGI MIAST</a></li><li id="category_2177616"><a href="/pl/c/FLAGI-WOJEWODZTW/2177616" title="FLAGI WOJEW&Oacute;DZTW">FLAGI WOJEW&Oacute;DZTW</a></li><li id="category_817722"><a href="/pl/flagi-firmowe-reklamowe-z-logo" title="FLAGI REKLAMOWE - FIRMOWE - WINDERY">FLAGI REKLAMOWE - FIRMOWE - WINDERY</a></li><li id="category_2177617"><a href="/pl/c/FLAGI-WOJSKOWE/2177617" title="FLAGI WOJSKOWE">FLAGI WOJSKOWE</a></li><li id="category_817727"><a href="/pl/flagi-religijne" title="FLAGI KOŚCIELNE">FLAGI KOŚCIELNE</a></li><li id="category_817665"><a href="/pl/flagi-samochodowe-na-motor-na-rower" title="FLAGI SAMOCHODOWE, NA MOTOR, NA ROWER">FLAGI SAMOCHODOWE, NA MOTOR, NA ROWER</a></li><li id="category_819228"><a href="/pl/flagi-pirackie-flagi-szachownica-formula" title="FLAGI PIRACKIE, FLAGI SZACHOWNICA">FLAGI PIRACKIE, FLAGI SZACHOWNICA</a></li><li id="category_817719"><a href="/pl/uchwyty-flagowe" title="UCHWYTY FLAGOWE">UCHWYTY FLAGOWE</a></li><li id="category_674762"><a href="/pl/poczet-sztandarowy-rekawiczki-szarfy" title="POCZET SZTANDAROWY: rękawiczki, szarfy">POCZET SZTANDAROWY: rękawiczki, szarfy</a></li><li id="category_674768"><a href="/pl/proporczyki-flagietki" title="PROPORCZYKI - FLAGIETKI">PROPORCZYKI - FLAGIETKI</a></li><li id="category_2177625"><a href="/pl/c/STOJACZKI-DO-FLAGIETEK-PROPORCZYKOW/2177625" title="STOJACZKI DO FLAGIETEK/ PROPORCZYK&Oacute;W">STOJACZKI DO FLAGIETEK/ PROPORCZYK&Oacute;W</a></li><li id="category_674758"><a href="/pl/godla-panstwowe" title="GODŁA PAŃSTWOWE">GODŁA PAŃSTWOWE</a></li><li id="category_674763"><a href="/pl/stojaki-flagowe-gabinetowe-wewnetrzne-i-zewnetrzne" title="STOJAKI FLAGOWE GABINETOWE">STOJAKI FLAGOWE GABINETOWE</a></li><li id="category_817720"><a href="/pl/drzewce" title="DRZEWCE/ MASZTY">DRZEWCE/ MASZTY</a></li><li id="category_2177626"><a href="/pl/c/AKCESORIA-DO-MASZTOW/2177626" title="AKCESORIA DO MASZT&Oacute;W">AKCESORIA DO MASZT&Oacute;W</a></li><li id="category_2177586"><a href="/pl/c/SLUPKI-ODGRADZAJACE/2177586" title="SŁUPKI ODGRADZAJĄCE">SŁUPKI ODGRADZAJĄCE</a></li><li id="category_2163187"><a href="/pl/wybory" title="WYBORY">WYBORY</a></li><li id="category_2177583"><a href="/pl/c/TABLICE-EMALIOWANE/2177583" title="TABLICE EMALIOWANE">TABLICE EMALIOWANE</a></li><li id="category_1968968"><a href="/pl/wypozyczalnia-flag-i-akcesorii-flagowych" title="WYPOŻYCZALNIA FLAG">WYPOŻYCZALNIA FLAG</a></li><li id="category_817718"><a href="/pl/pamiatki-z-polski" title="PAMIĄTKI  Z POLSKI">PAMIĄTKI  Z POLSKI</a></li><li id="category_674744"><a href="/pl/gadzety-kibicow" title="Gadżety Kibic&oacute;w">Gadżety Kibic&oacute;w</a></li>
+                                <li id="category_novelties"><a href="/pl/new/1/phot" title="Nowości" class="novelties"><img src="/libraries/images/1px.gif" alt="" class="px1">Nowości</a></li>                                                            </ul>
+                        </div>
+                    </div><div class="box" id="box_paczkomaty">
+    <div class="boxhead">
+        <span><img src="/libraries/images/1px.gif" alt="" class="px1">Paczkomaty InPost</span>
+    </div>
+    <div class="innerbox">
+        <div style="text-align: center;">
+            <a href="http://paczkomaty.pl/" target="_blank" rel="noopener" title="Paczkomaty InPost"><img alt="Paczkomaty InPost" src="/libraries/images/box_paczkomaty.png"></a>
+        </div>
+    </div>
+</div>                    <div class="box resetcss box_custom" id="https://twojapoducha.pl/">
+                                                                    <div class="boxhead">
+                            <span><img src="/libraries/images/1px.gif" alt="" class="px1">Poduszki w kształcie roślin</span>
+                        </div>
+                                                <div class="innerbox">
+                    
+                                            <p><span style="font-size: 14pt;"><strong>Polecamy ręcznie robione poduszki</strong> </span></p>
+<p><span style="font-size: 14pt;">             <em>inne niż wszystkie </em></span></p>
+<p><img src="/userdata/public/assets//succulent%20perla3.jpg" alt="" width="211" height="316" /></p>
+<p><span style="font-size: 14pt;"><a href="http://www.twojapoducha.pl">www.twojapoducha.pl</a></span></p>
+<p> </p>
+<p> </p>
+                    
+                    
+                    
+                                            </div>
+                                        </div>                    <div class="box resetcss box_custom" id="box_custom66">
+                    
+                                            <p style="text-align: center;"><span style="font-size: 14pt;"><strong><span style="color: #000080;">ŚWIECE SOJOWE</span></strong></span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;"><strong><span style="color: #000080;">O NIEPOWTARZALNYCH ZAPACHCACH</span></strong></span></p>
+<p style="text-align: center;"><strong><span style="color: #000080;"><img src="/userdata/public/assets//SZARLOTKA-4.jpg" alt="" width="290" height="209" /></span></strong></p>
+<p style="text-align: center;"><span style="color: #000080; font-size: 12pt;"><a href="http://www.sheaandyou.pl">www.sheaandyou.pl</a></span></p>
+<p style="text-align: center;"> </p>
+                    
+                    
+                    
+                                        </div><div class="box-xhr box" data-id="25" data-engine="Recent"></div>
+                    </div>
+                
+                <div class="centercol s-grid-9" itemscope itemtype="https://schema.org/Product">
+                    
+                                            <div class="box row" id="box_productfull" data-category="FLAGI MIAST">
+                            <div class="boxhead">
+                                <h1 class="name" itemprop="name">
+                                    FLAGA Bydgoszcz
+                                </h1>
+                            </div>
+
+                            <div class="innerbox product-main-box" data-loading="Trwa wgrywanie pliku...">
+                                <div class="maininfo row">
+                                    <div class="f-row">
+                                        <div class="productimg f-grid-6">
+    <div class="mainimg productdetailsimgsize row">
+                            
+                    <img 
+                class="photo productimg  gallery_2895 " 
+                src="/environment/cache/images/500_500_productGfx_2895/POL_Bydgoszcz_flag.svg.jpg"
+                 
+                    width="500" 
+                    height="258"
+                                alt="POL_Bydgoszcz_flag.svg.png"
+                 />
+        
+            </div>
+        
+    <div class="smallgallery row">
+                    <div class="innersmallgallery">
+                <ul class="r--l-flex r--l-flex-wrap">
+                                            
+                        <li class="r--l-flex r--l-flex-vcenter">
+                            <a 
+                                id="prodimg2895" 
+                                href="/userdata/public/gfx/2895/POL_Bydgoszcz_flag.svg.jpg" 
+                                title="POL_Bydgoszcz_flag.svg.png"
+                                                                    data-gallery="true"
+                                    data-gallery-list="FLAGA Bydgoszcz" 
+                                                                class="gallery  current ">
+                                    <link 
+                                        itemprop="image" 
+                                        href="/userdata/public/gfx/2895/POL_Bydgoszcz_flag.svg.jpg" />
+
+                                    <img 
+                                        src="/environment/cache/images/120_120_productGfx_2895/POL_Bydgoszcz_flag.svg.jpg" 
+                                                                                    width="120" 
+                                            height="62"
+                                                                                alt="POL_Bydgoszcz_flag.svg.png" 
+                                        data-img-name="/environment/cache/images/500_500_productGfx_2895/POL_Bydgoszcz_flag.svg.jpg"
+                                         />
+                            </a>
+                        </li>
+                                            
+                        <li class="r--l-flex r--l-flex-vcenter">
+                            <a 
+                                id="prodimg2893" 
+                                href="/userdata/public/gfx/2893/Flagietki-2.jpg" 
+                                title="Flagietki (2).jpg"
+                                                                    data-gallery="true"
+                                    data-gallery-list="FLAGA Bydgoszcz" 
+                                                                class="gallery  ">
+                                    <link 
+                                        itemprop="image" 
+                                        href="/userdata/public/gfx/2893/Flagietki-2.jpg" />
+
+                                    <img 
+                                        src="/environment/cache/images/120_120_productGfx_2893/Flagietki-2.jpg" 
+                                                                                    width="120" 
+                                            height="113"
+                                                                                alt="Flagietki (2).jpg" 
+                                        data-img-name="/environment/cache/images/500_500_productGfx_2893/Flagietki-2.jpg"
+                                         />
+                            </a>
+                        </li>
+                                            
+                        <li class="r--l-flex r--l-flex-vcenter">
+                            <a 
+                                id="prodimg2894" 
+                                href="/userdata/public/gfx/2894/proproczyki-panstwowe.jpg" 
+                                title="proproczyki państwowe.jpg"
+                                                                    data-gallery="true"
+                                    data-gallery-list="FLAGA Bydgoszcz" 
+                                                                class="gallery  ">
+                                    <link 
+                                        itemprop="image" 
+                                        href="/userdata/public/gfx/2894/proproczyki-panstwowe.jpg" />
+
+                                    <img 
+                                        src="/environment/cache/images/120_120_productGfx_2894/proproczyki-panstwowe.jpg" 
+                                                                                    width="120" 
+                                            height="80"
+                                                                                alt="proproczyki państwowe.jpg" 
+                                        data-img-name="/environment/cache/images/500_500_productGfx_2894/proproczyki-panstwowe.jpg"
+                                         />
+                            </a>
+                        </li>
+                                    </ul>
+
+                <nav class="hide">
+                    <span class="smallgallery-left none"></span>
+                    <span class="smallgallery-right"></span>
+                </nav>
+            </div>
+            </div>
+</div>                                        <div class=" f-grid-6">
+                                            <div class="availability row">
+                                                                                                                                                            <meta itemprop="sku" content="8699148_20190201114553" />
+                                                    
+                                                                                                        
+                                                    <div class="row">
+                                                                                                                    <div class="row availability">
+                                                                <span class="first">Dostępność:</span>
+                                                                                                                                <span class="second">dostępny na zamówienie</span>
+                                                            </div>
+                                                        
+                                                                                                                    <div class="delivery">
+                                                                <span class="first">Wysyłka w:</span>
+                                                                <span class="second">3 dni</span>
+                                                            </div>
+                                                        
+                                                                                                            </div>
+                                                
+                                                                                                    <meta itemprop="brand" content="EKON STUDIO">
+                                                                                            </div>
+
+                                            <div class="bottomborder row" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                                <link itemprop="url" href="https://sklep-flagi.pl/pl/p/FLAGA-Bydgoszcz/22977389">
+                                                
+                                                <div class="basket">
+                                                                                                                                                                        <div class="price">
+                                                                <span class="price-name">Cena:</span>
+                                                                                                                                    <del class="none"></del>
+                                                                    
+                                                                    <em class="main-price">38,00 zł</em>
+                                                                    <span class="none" itemprop="price">
+                                                                        38.00
+                                                                    </span>
+                                                                    
+                                                                                                                                                                                                </div>
+                                                        
+                                                        
+                                                                                                                                                                            
+                                                                                                                    <div class="price-netto">
+                                                                                                                                    <span class="price-name">Cena netto:</span>
+                                                                                                                                                                                                    <em class="main-price" class="no-color">30,89 zł</em>
+                                                                                                                                        
+                                                                                                                                                                                                </div>
+                                                        
+                                                        
+                                                                                                                                                                            
+                                                        <meta itemprop="priceCurrency" content="PLN">
+                                                                                                        
+                                                                                                            <link itemprop="availability" href="https://schema.org/InStock" />
+                                                    
+                                                    
+                                                    <form class="form-basket" method="post" action="/pl/basket/add/post" enctype="multipart/form-data">
+                                                                                                                                                                            <div class="stocks">
+                                                                                                                                                                                                        <div class="f-row">
+                                                                        <div class="label f-grid-6">
+                                                                            <label for="option_13" class="label">
+                                                                                                                                                                                                                                                                                                                                                                                                                            <em class="color">*</em>
+                                                                                                                                                                rozmiar flagi:
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="stock-options f-grid-6">
+                                                                                                                                                        <div class="option_select option_required">
+                                                                                <select id="option_13" name="option_13">
+                                                                                                                                                                    <option value="" title="">wybierz</option>
+                                                                                                                                                                                                                                                    <option value="296" >112x70cm</option>
+                                                                                                                                                                    <option value="297" >150x100cm</option>
+                                                                                                                                                                    <option value="298" >200x125cm</option>
+                                                                                                                                                                    <option value="299" >300x100cm</option>
+                                                                                                                                                                    <option value="300" >chorągiewka 17x10cm</option>
+                                                                                                                                                                    <option value="301" >proporczyk 12x22cm</option>
+                                                                                                                                                                </select>
+                                                                            </div>
+                                                                                                                                                    </div>
+                                                                    </div>
+                                                                                                                                                                                                </div>
+                                                        
+                                                        <fieldset class="addtobasket-container">
+                                                            <div class="quantity_wrap">
+                                                                <span class="quantity_name">ilość</span>
+                                                                <span class="number-wrap">
+                                                                    <input name="quantity" value="1" type="number" class="short inline">
+                                                                </span>
+                                                                <span class="unit">szt.</span>
+                                                                <input type="hidden" value="28149711" name="stock_id">
+                                                                <input type="hidden" value="22977389" name="product_id">
+                                                                <input type="hidden" value="1" name="nojs">
+
+                                                                                                                            </div>
+                                                            <div class="button_wrap">
+                                                                <button type="submit" class="addtobasket btn btn-red">
+                                                                    <img src="/libraries/images/1px.gif" alt="Do koszyka" class="px1">
+                                                                    <span>Do koszyka</span>
+                                                                </button>
+                                                                                                                            </div>
+                                                        </fieldset>
+                                                            
+                                                                                                                                                                                                                                                    <fieldset class="availability-notifier-container none">
+                                                                    <div class="button_wrap">
+                                                                        <button type="submit" class="availability-notifier-btn btn btn-red" data-is-logged="false" data-stock-id="28149711" data-product-id="22977389" data-product-name="FLAGA Bydgoszcz">
+                                                                            <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                                                            <span>powiadom o dostępności</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </fieldset>
+                                                                                                                                                                                                                                        </form>
+                                                  
+                                                    <p class="center mt-2 r--fs-xl js__product-availability none">
+                                                        towar niedostępny
+                                                    </p>
+                         
+                                                                                                            <a href="/pl/fav/add/28149711" title="dodaj do przechowalni" class="addtofav">
+                                                            <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                                            <span>dodaj do przechowalni</span>
+                                                        </a>
+                                                    
+                                                                                                        <div>
+                                                        <span><em class="color">*</em> - Pole wymagane</span>
+                                                    </div>
+                                                                                                    </div>
+                                                    
+                                                
+                                                    <div class="productdetails-more-details clearfix">
+                                                                                                                    <div class="productdetails-more row">
+                                                                
+                                                                                                                                    <div class="row manufacturer">
+                                                                        <em>Producent: </em>
+                                                                                                                                                                                                                                <a class="brand" href="/pl/producer/EKON-STUDIO/386002" title="EKON STUDIO">
+                                                                                                                                                                                                                                        EKON STUDIO
+                                                                                                                                                        </a>
+                                                                                                                                            </div>
+                                                                                                                                
+                                                                <meta itemprop="category" content="FLAGI MIAST" />     
+
+                                                                                                                                    <div class="row code">
+                                                                        <em>Kod produktu:</em> 
+                                                                        <span>8699148_20190201114553</span>
+                                                                    </div>
+                                                                                                                            </div>
+                                                        
+                                                        <ul class="row links-q">
+                                                                                                                            <li class="question">
+                                                                    <a data-href="/pl/p/q/22977389" title="zapytaj o produkt" class="question ajaxlayer">
+                                                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                                                        <span>zapytaj o produkt</span>
+                                                                    </a>
+                                                                </li>
+                                                                          
+                                                                                                                            <li class="mailfriend">
+                                                                    <a href="/pl/p/mail/recommend/22977389" title="poleć znajomemu" class="mailfriend">
+                                                                        <img src="/libraries/images/1px.gif" alt="" class="px1">
+                                                                        <span>poleć znajomemu</span>
+                                                                    </a>
+                                                                </li>
+                                                                                                                                                                                                                                                            <li class="comment">
+                                                                        <a href="#commentform" title="dodaj opinię" class="comment addcomment">
+                                                                            <img src="/libraries/images/1px.gif" alt="" class="px1" />
+                                                                            <span>dodaj opinię</span>
+                                                                        </a>
+                                                                    </li>
+                                                                                                                                                                                        
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                                                                    
+                                                                                                    <div class="fb_buttons row">
+                                                        
+                                                                                                                    <fb:like href="https://sklep-flagi.pl/pl/p/FLAGA-Bydgoszcz/22977389" send="false" layout="button_count" show_faces="true" width="110" font="tahoma"></fb:like>
+                                                        
+                                                                                                            </div>
+                                                                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                                                    <div class="product-modules">
+                                                                    <div class="box tab" id="box_description">
+        <div class="boxhead">
+            <h3>
+                <img src="/libraries/images/1px.gif" alt="" class="px1">
+                Opis
+            </h3>
+        </div>
+
+        <div class="innerbox">
+            <div class="resetcss" itemprop="description"><p><strong>FLAGA Bydgoszczy</strong></p>
+<p><span style="font-size:12pt;font-family:'times new roman', times, serif;">Flagi drukowane bezpośrednio na materiale- dzianina flagowa 125g/m2 (poliester)- najnowocześniejsza technologia wydruku, pozwalająca przebicie koloru na druga stronę. Użyte tusze są w pełni ekologiczne, a proces produkcji zapewnia najwyższą jakość. Flagi można prać i prasować. </span></p>
+<p><span style="font-family:'times new roman', times, serif;"><span style="font-size:12pt;">Flagi są podwójne stębnowane nićmi tytanowymi, co zapewnia im dużą wytrzymałość na działanie czynników atmosferycznych typu wiatr, deszcz, śnieg itp.</span> </span></p>
+<p><strong>Sposób wykończenia flag:</strong></p>
+<p><span style="font-size:12pt;font-family:'times new roman', times, serif;">- tunel na drzewiec 22-25 mm</span></p>
+<p><span style="font-size:12pt;font-family:'times new roman', times, serif;">- taśma wzmacniająca + zakute 2 oczka metalowe (stojaki flagowe i maszty)</span></p>
+<p><span style="font-size:12pt;font-family:'times new roman', times, serif;">- taśma wzmacniająca + wszyte plastikowe karabińczyki (maszty)</span></p>
+<p> </p>
+<p><span style="font-size:12pt;font-family:'times new roman', times, serif;">Produkt 100% polski bezpośrednio od producenta</span></p>
+<p><span style="font-size:12pt;font-family:'times new roman', times, serif;">Możliwe zamówienie flagi w dowolnym rozmiarze i dowolnej grafice.</span></p>
+<p><span style="font-family:'times new roman', times, serif;"> </span></p>
+<p><span style="font-family:'times new roman', times, serif;"> </span></p></div>
+            
+                    </div>
+    </div>
+                                                                                                                                                                    <div class="box row tab" id="box_productcomments">
+        <div class="boxhead tab-head">
+            <h3>
+                <img src="/libraries/images/1px.gif" alt="" class="px1">
+                Opinie o produkcie (0)
+            </h3>
+        </div>
+
+        <div class="innerbox tab-content tab-comments">
+            
+                                                            <form action="/pl/p/comment/add/22977389" method="post" class="comment multirow" id="commentform">
+                    <fieldset>
+                        <div class="none bottest"><!-- <input name="bottest1" value="1" /> --> <input name="bottest2" /></div>
+
+                        <label for="commentuser">Imię lub pseudonim:</label>
+                        <div class="f-row">
+                            <input name="user" type="text" id="commentuser" value="" size="30"  class="f-grid-12" >
+                        </div>
+                        
+                        <label for="comment">Twoja opinia:</label>
+                        <div class="f-row">
+                            <textarea name="comment" id="comment" rows="5" cols="30" class="f-grid-12"></textarea>
+                        </div>
+                        
+                        
+                        
+                        <button type="submit" class="btn">
+                            <img src="/libraries/images/1px.gif" alt="" class="px1">
+                            <span>Wyślij</span>
+                        </button>
+                    </fieldset>
+                </form>
+                    </div>
+    </div>
+
+                                </div>
+                                                
+                                                                
+                                    </div>
+
+                            </div>
+        </div>
+    </div>
+
+    
+    <script type="text/javascript">
+        try { 
+            
+                window.Shop = window.Shop || {};
+                window.Shop.values = window.Shop.values || {};
+            
+            Shop.values.OptionsConfiguration = "null"; 
+            Shop.values.OptionsDefault = "bnVsbA=="; 
+            Shop.values.OptionCurrentStock = "28149711"; 
+            Shop.values.optionCurrentVirt = "default"; 
+            Shop.values.OptionImgWidth = "500"; 
+            Shop.values.OptionImgHeight = "500"; 
+            Shop.values.ProductStocksCache = "W10=";
+            Shop.values.shippingFlagEnabled = "";
+        } catch(e) { }
+    </script>
+<div class="bottom-footer row">
+	<div class="container">
+        
+    </div>
+</div>    <footer class="footer row">
+        <div class="innerfooter container row">
+            <ul class="overall">
+                                    <li class="overall flex flex-4" id="footgroup1">
+                        <ul>
+                            <li class="head hidden">Warunki zakupów</li>
+                                                                                                <li>
+                                        <a href="/pl/i/Regulaminy/14"  title="Regulaminy" id="footlink30">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Regulaminy
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="/pl/i/Polityka-prywatnosci/15"  title="Polityka prywatności" id="footlink32">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Polityka prywatności
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="/pl/static/reklamacje-i-zwroty.html"  title="Reklamacje i zwroty" id="footlink25">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Reklamacje i zwroty
+                                        </a>
+                                    </li>
+                                                                                    </ul>
+                    </li>
+                                    <li class="overall flex flex-4" id="footgroup26">
+                        <ul>
+                            <li class="head hidden">Płatności i dostawa</li>
+                                                                                                <li>
+                                        <a href="/pl/static/formy-platnosci.html"  title="Formy płatności" id="footlink26">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Formy płatności
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="/pl/static/czas-i-koszty-dostawy.html"  title="Czas i koszty dostawy" id="footlink27">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Czas i koszty dostawy
+                                        </a>
+                                    </li>
+                                                                                    </ul>
+                    </li>
+                                    <li class="overall flex flex-4" id="footgroup5">
+                        <ul>
+                            <li class="head hidden">Moje konto</li>
+                                                                                                <li>
+                                        <a href="/panel/"  title="Twoje zamówienia" id="footlink13">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Twoje zamówienia
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="/panel/edit"  title="Ustawienia konta" id="footlink14">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Ustawienia konta
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="/panel/favourites"  title="Przechowalnia" id="footlink15">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Przechowalnia
+                                        </a>
+                                    </li>
+                                                                                    </ul>
+                    </li>
+                                    <li class="overall flex flex-4" id="footgroup2">
+                        <ul>
+                            <li class="head hidden">Informacje o sklepie</li>
+                                                                                                <li>
+                                        <a href="/pl/static/o-firmie.html"  title="O firmie" id="footlink23">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            O firmie
+                                        </a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a href="/pl/contact"  title="Formularz kontaktowy" id="footlink29">
+                                            <img alt="" src="/libraries/images/1px.gif">
+                                            Formularz kontaktowy
+                                        </a>
+                                    </li>
+                                                                                    </ul>
+                    </li>
+                            </ul>
+        </div>
+
+            </footer>
+
+    <div class="up">
+        <a href="#" title="do góry" class="btn fa fa-2x fa-angle-up">
+            <img src="/libraries/images/1px.gif" alt="" class="px1" />
+            <span>do góry</span>
+        </a>
+    </div>
+</div><!-- and of wrap -->
+
+<div class="modal-overlay"></div><!-- overlay for modal lightbox-->    <script type="text/javascript">
+        
+        (function(){
+            var installed;
+            var UAid;
+            var content_types;
+            var content_type;
+            var visitor_type;
+            var userId;
+            var conversionId;
+            var conversionLabel;
+            var remarketing;
+            var fb_remarketing;
+            var fb_pixel;
+            var order_email;
+
+            installed = 'true';
+            
+            UAid = 'UA-113005126-15';
+            conversionId = '802544262';
+            conversionLabel = 'zGjBCPiArIMBEIa11_4C';
+            remarketing = '1';
+            fb_remarketing = '1';
+            fb_pixel = '424134045140072';
+            order_email = '';
+            
+            content_type = '';
+            visitor_type = '';
+            userId = '';
+            content_types = {
+                shop_index: 'Main page',
+                shop_product: 'Products | Product',
+                shop_product_list: 'Products | Category',
+                shop_categories_list: 'Products | Categories list',
+                shop_product_producer: 'Products | Vendor',
+                shop_product_promo: 'Products | Promotions',
+                shop_product_new: 'Products | New',
+                shop_product_day: 'Products | Products of the day',
+                shop_product_search: 'Products | Search results',
+                shop_product_loyaltylist: 'Products | Loyalty list',
+                shop_product_mailfriend: 'Products | Mail to friend',
+                shop_infopage: 'Info page',
+                shop_news: 'Blog | News',
+                shop_news_list: 'Blog | News list',
+                shop_news_category_list: 'Blog | Category',
+                shop_news_tag_list: 'Blog | Tag list',
+                shop_basket: 'Cart | Cart',
+                shop_basket_address: 'Cart | Address',
+                shop_basket_step2: 'Cart | Step 2',
+                shop_basket_step3: 'Cart | Step 3',
+                shop_basket_done: 'Cart | Done',
+                shop_basket_finished: 'Cart | Finished',
+                shop_login: 'User | Login',
+                shop_login_register: 'User | Register',
+                shop_login_passremind: 'User | Password reminder',
+                shop_panel: 'Panel | Main',
+                shop_panel_orders: 'Panel | Order list',
+                shop_panel_order: 'Panel | Order',
+                shop_panel_payment: 'Panel | Payment',
+                shop_panel_comments: 'Panel | Comments',
+                shop_panel_favourites: 'Panel | Favourites',
+                shop_panel_addresses: 'Panel | Addresses',
+                shop_panel_address: 'Panel | Address',
+                shop_panel_password: 'Panel | Password change',
+                shop_panel_edit: 'Panel | Edit profile',
+                shop_contact: 'Contact form',
+                shop_facebook_splash: 'Facebook splash',
+                shop_links_list: 'Links list',
+                shop_newsletter_unsign: 'Newsletter | Unsign'
+            };
+            document.addEventListener('DOMContentLoaded', function () {
+                var instance;
+                
+                content_type = content_types[document.body.className.split(' ')[0]];
+
+                if (!!document.cookie.indexOf("admin_ip_verify")) {
+                    visitor_type = 'user';
+                } else {
+                    visitor_type = 'admin';
+                }
+
+                if (window.shopLayer) {
+                    shopLayer.push({
+                        ads_installed: installed,
+                        ads_UAid: UAid,
+                        ads_conversionId: conversionId,
+                        ads_conversionLabel: conversionLabel,
+                        ads_contentType: content_type,
+                        ads_visitorType: visitor_type,
+                        ads_remarketing: remarketing,
+                        ads_fb_remarketing: fb_remarketing,
+                        ads_fb_pixel: fb_pixel,
+                    });
+
+                    if(order_email) {
+                        shopLayer.push({
+                            ads_email: order_email
+                        });
+                    }
+
+                    if (window.ShopInstance) {
+                        instance = ShopInstance;
+                    } else if (window.shoper) {
+                        instance = shoper;
+                    }
+                    userId = instance.getVisitorId();
+                    if (userId) {
+                        shopLayer.push({
+                            ads_userId: userId
+                        });
+                    }
+                }
+            });
+            
+        })();
+    </script>
+
+
+    <script type="text/javascript">
+        if($('#box_facebookchat')) $('#box_facebookchat').html('<fb:comments width="' + $('#box_facebookchat').width() + '" href="https://sklep-flagi.pl/pl/p/FLAGA-Bydgoszcz/22977389" num_posts="10"></fb:comments>');
+    </script>
+
+    <div class="info-message info-message_hidden">
+        <strong class="info-message__text">Sklep jest w trybie podglądu</strong>
+    </div>
+    <div class="center">
+        <span id="turn-classic" class="btn rwd">
+    		Pokaż pełną wersję strony
+		</span>
+    </div>
+
+<div id="ri-widget"></div> <script> var s = document.createElement('script'); s.src = "//app.refericon.pl/js/ri.js"; s.async = true; window.riO = {  }; document.getElementsByTagName('body')[0].appendChild(s); </script>
+<script>
+try {
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId: "287645161608751",
+        xfbml: true,
+        cookie: true,
+        status: true,
+        version: "v8.0"
+      });
+    };
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) { return; }
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/"+Shop.lang.name+"/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+} catch (error) {
+    console.log(error);
+}
+</script>
+
+<style>
+.fb-messengermessageus {
+    z-index:10;
+    position:fixed !important;top:10px;
+    right:10px;
+    max-width:121px;
+}
+</style>
+<div class='fb-messengermessageus' messenger_app_id='287645161608751' page_id='' color='blue' size='large' ></div>
+<script type="text/javascript">
+            
+            window.Shop = window.Shop || {};
+            window.Shop.basket = window.Shop.basket || {};
+            window.Shop.values = window.Shop.values || {};
+        
+	    	    	    Shop.basket.basketProducts = '';
+		Shop.basket.categoryProducts = '';
+        Shop.values.currency = 'PLN';
+        Shop.values.decimalSep = ',';
+        Shop.values.thousandSep = '';
+        Shop.countryCode = 'PL';
+        Shop.pageType = 'shop_product shop_product_from_cat_2177618';
+        Shop.pageId = 'shop_product22977389'.replace(/\D/g, '');
+        Shop.includeFacebookSDK = '1';
+        Shop.displayCookieInfo = '0'
+        Shop.cookiesViewType = '1';
+	</script>
+
+<template id="consents-modal">
+    <div class="consents">
+        <div class="consents__wrapper">
+            <div class="consents__modal">
+                <div class="consents__basic-view js__basic-view">
+                    <div class="consents__content">
+                        <p class="consents__heading">
+                            Dbamy o Twoją prywatność
+                        </p>
+
+                        Pliki cookies i pokrewne im technologie umożliwiają poprawne działanie strony i pomagają nam dostosować ofertę do Twoich potrzeb. Możesz zaakceptować wykorzystanie przez nas wszystkich tych plików i przejść do sklepu lub dostosować użycie plików do swoich preferencji, wybierając opcję "Dostosuj zgody".
+
+                                                    <p>
+                                <a class="consents__link" href="">Więcej o plikach cookies przeczytasz w naszej Polityce prywatności.</a>
+                            </p>
+                                            </div>
+
+                    <div class="consents__buttons">
+                        <button type="button" class="btn btn-red js__accept-all-consents">Przejdź do sklepu</button>
+                        <button type="button" class="btn js__show-advanced-view">Dostosuj zgody</button>
+                    </div>
+                </div>
+
+                <div class="consents__advanced-view js__advanced-view none">
+                    <div class="consents__advanced-content">
+                        <p class="consents__heading">
+                            Ustawienia plików cookies
+                        </p>
+
+                        W tym miejscu możesz określić swoje preferencje w zakresie wykorzystywania przez nas plików cookies.
+                        <br>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" id="select_all" class="checkbox js__select-all-consents">
+                                    <label for="select_all"></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label for="select_all"><strong>Zaznacz wszystko</strong></label>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" class="checkbox" checked disabled>
+                                    <label for></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label><strong>Niezbędne do działania strony</strong></label>
+                                </p>
+
+                                <p>
+                                    Te pliki są niezbędne do działania naszej strony internetowej, dlatego też nie możesz ich wyłączyć.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" id="functionalConsent" name="functionalConsent" class="checkbox js__consent">
+                                    <label for="functionalConsent"></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label for="functionalConsent"><strong>Funkcjonalne</strong></label>
+                                </p>
+
+                                <p>
+                                    Te pliki umożliwiają Ci korzystanie z pozostałych funkcji strony internetowej (innych niż niezbędne do jej działania). Ich włączenie da Ci dostęp do pełnej funkcjonalności strony.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" id="analyticsConsent" name="analyticsConsent" class="checkbox js__consent">
+                                    <label for="analyticsConsent"></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label for="analyticsConsent"><strong>Analityczne</strong></label>
+                                </p>
+
+                                <p>
+                                    Te pliki pozwalają nam na dokonanie analiz dotyczących naszego sklepu internetowego, co może przyczynić się do jego lepszego funkcjonowania i dostosowania do potrzeb Użytkowników.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" id="platformAnalyticsConsent" name="platformAnalyticsConsent" class="checkbox js__consent">
+                                    <label for="platformAnalyticsConsent"></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label for="platformAnalyticsConsent"><strong>Analityczne dostawcy oprogramowania</strong></label>
+                                </p>
+
+                                <p>
+                                    Te pliki wykorzystywane są przez dostawcę oprogramowania, w ramach którego działa nasz sklep. Nie są one łączone z innymi danymi wprowadzanymi przez Ciebie w sklepie. Celem zbierania tych plików jest dokonywanie analiz, które przyczynią się do rozwoju oprogramowania. Więcej na ten temat przeczytasz w <a href="https://dcsaascdn.net/polityka-prywatnosci-shoper-sa" target="_blank" rel="noopener">Polityce plików cookies Shoper</a>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" id="marketingConsent" name="marketingConsent" class="checkbox js__consent">
+                                    <label for="marketingConsent"></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label for="marketingConsent"><strong>Marketing</strong></label>
+                                </p>
+
+                                <p>
+                                    Dzięki tym plikom możemy prowadzić działania marketingowe. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="consents__advanced-buttons">
+                        <button type="button" class="btn js__show-basic-view">Anuluj</button>
+                        <button type="button" class="btn btn-red js__save-consents">Zapisz ustawienia</button>
+                    </div>
+                </diV>
+            </div>
+        </div>
+
+        <div class="consents__mask"></div>
+    </div>
+</template>
+    <script id="config-analytics" type="application/json">
+        {
+            "clientGoogleAnalyticsV4": {
+                "isActive": "",
+                "trackingId": "",
+                "isGtm": "0"
+            },
+
+            "facebookBusinessExtension": {
+                "isActive": false,
+                "pixelId": ""
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+<div id="shoper-foot">
+    <a href="https://www.shoper.pl/" target="_blank" rel="noopener" title="Sklep internetowy Shoper.pl" class="popup">Sklep internetowy Shoper.pl</a>
+</div></body>
+</html>
